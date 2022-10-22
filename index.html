@@ -33,6 +33,11 @@
                 <use href="./img/svg/icons.svg#phone"></use>
             </svg>+38 096 111 11 11</a></li>
         </ul>
+        <button class="menu-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40">
+            <use href="./img/svg/icons.svg#mobile-menu-btn"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -89,7 +94,19 @@
             <ul class="examples-list">
                 <li class="examples-list__item">
                   <div class="examples-list__container">
-                    <img src="./img/images/comp.jpg" alt="img" width="370" class="examples-list__img">
+                    <picture>
+                      <source
+                              media="(min-width:1200px)"
+                              srcset="./img/examples/"
+                              type="image/webp"
+                      >
+                      <img 
+                          src="./img/images/comp.jpg" 
+                          alt="computer"
+                          class="examples-list__img"
+                      >
+                    </picture>
+                    <!--<img src="./img/images/comp.jpg" alt="img" width="370" class="examples-list__img">-->
                     <div class="examples-list__label">
                       <p class="examples-list__text">Десктопні додатки</p>
                     </div>
@@ -439,5 +456,11 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <!-- Mobile menu -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous">
+    </script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>  
