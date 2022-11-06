@@ -97,11 +97,11 @@
                     <picture>
                       <source
                               media="(min-width:1200px)"
-                              srcset="./img/examples/"
+                              srcset="./img/examples/img1_lg-@1x.webp 1x, ./img/examples/img1_lg-@2x.webp 2x "
                               type="image/webp"
                       >
                       <img 
-                          src="./img/images/comp.jpg" 
+                          src="./img/images/examples/comp.jpg" 
                           alt="computer"
                           class="examples-list__img"
                       >
@@ -114,15 +114,35 @@
                 </li>
                 <li class="examples-list__item">
                   <div class="examples-list__container">
-                    <img src="./img/images/tel.jpg" alt="img" width="370" class="examples-list__img">
+                    <picture>
+                      <source 
+                              media="(min-width:1200px)" 
+                              srcset="./img/examples/img2_lg-@1x.webp 1x, ./img/examples/img2_lg-@2x.webp 2x "
+                              type="image/webp">
+                      <img 
+                            src="./img/images/examples/tel.jpg" 
+                            alt="tel" 
+                            class="examples-list__img">
+                    </picture>
+                    <!--<img src="./img/images/tel.jpg" alt="img" width="370" class="examples-list__img">-->
                     <div class="examples-list__label">
-                      <p class="examples-list__text">Мобільні додатки</p>
+                      <p class="examples-list__text">Мобільні додатки</p> 
                     </div>
                   </div>
                 </li>
                 <li class="examples-list__item">
                   <div class="examples-list__container">
-                    <img src="./img/images/mous.jpg" alt="img" width="370" class="examples-list__img">
+                    <picture>
+                      <source 
+                              media="(min-width:1200px)" 
+                              srcset="./img/examples/img3_lg-@1x.webp 1x, ./img/examples/img3_lg-@2x.webp 2x "
+                            type="image/webp">
+                      <img 
+                           src="./img/images/examples/mous.jpg" 
+                           alt="tablet" 
+                           class="examples-list__img">
+                    </picture>
+                    <!--<img src="./img/images/mous.jpg" alt="img" width="370" class="examples-list__img">-->
                     <div class="examples-list__label">
                       <p class="examples-list__text">Дизайнерські рішення</p>
                     </div>
@@ -136,7 +156,18 @@
             <div class="container">
             <ul class="team-list">
                 <li class="team-list__item">
-                    <img src="./img/images/ihor.jpg" alt="img" width="270" height="260" class="imges">
+                    <!--<img src="./img/images/ihor.jpg" alt="img" width="270" height="260" class="imges">-->
+                    <img srcset="
+                                ./img\images\team\w\img1_270-d.webp 270w
+                                ./img\images\team\w\img1_354-t.webp 354w
+                                ./img\images\team\w\img1_450-m.webp 450w
+                                ./img\images\team\w\img1_540-d.webp 540w
+                                ./img\images\team\w\img1_708-t.webp 708w
+                                ./img\images\team\w\img1_900-m.webp 900w"
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                src="./img/images/team/w/img1_450-m.webp 450w"
+                                alt="designer"
+                                class="team-list__images">
                     <div class="team-list__container">
                        <h3 class="title team-list__title">Ігор Дем'яненко</h3>
                     <p lang="en" class="team-list__text">Product Designer</p>
@@ -173,7 +204,18 @@
                   </div>
                 </li>
                 <li class="team-list__item">
-                    <img src="./img/images/olha.jpg" alt="img" width="270" height="260" class="imges">
+                    <!--<img src="./img/images/olha.jpg" alt="img" width="270" height="260" class="imges">-->
+                    <img srcset="
+                                ./img\images\team\w\img2_270-d.webp 270w
+                                ./img\images\team\w\img2_354-t.webp 354w
+                                ./img\images\team\w\img2_450-m.webp 450w
+                                ./img\images\team\w\img2_540-d.webp 540w
+                                ./img\images\team\w\img2_708-t.webp 708w
+                                ./img\images\team\w\img2_900-m.webp 900w"
+                          sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                          src="./img/images/team/w/img2_450-m.webp 450w" 
+                          alt="Developer" 
+                          class="team-list__images">
                     <div class="team-list__container">
                       <h3 class="title team-list__title">Ольга Рєпіна</h3>
                     <p lang="en" class="team-list__text">Frontend Developer</p>
@@ -210,7 +252,18 @@
                   </div>
                 </li>
                 <li class="team-list__item">
-                    <img src="./img/images/nik.jpg" alt="img" width="270" height="260" class="imges">
+                    <!--<img src="./img/images/nik.jpg" alt="img" width="270" height="260" class="imges">-->
+                    <img srcset="
+                                ./img\images\team\w\img3_270-d.webp 270w
+                                ./img\images\team\w\img3_354-t.webp 354w
+                                ./img\images\team\w\img3_450-m.webp 450w
+                                ./img\images\team\w\img3_540-d.webp 540w
+                                ./img\images\team\w\img3_708-t.webp 708w
+                                ./img\images\team\w\img3_900-m.webp 900w"
+                      sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      src="./img/images/team/w/img2_450-m.webp 450w" 
+                      alt="Marketing" 
+                      class="team-list__images">
                     <div class="team-list__container">
                       <h3 class="title team-list__title">Микола Тарасов</h3>
                     <p lang="en" class="team-list__text">Marketing</p>
@@ -247,7 +300,18 @@
                   </div>
                   </li>
                 <li class="team-list__item">
-                    <img src="./img/images/mih.jpg" alt="img" width="270" height="260" class="imges">
+                    <!--<img src="./img/images/mih.jpg" alt="img" width="270" height="260" class="imges">-->
+                    <img srcset="
+                                ./img\images\team\w\img4_270-d.webp 270w
+                                ./img\images\team\w\img4_354-t.webp 354w
+                                ./img\images\team\w\img4_450-m.webp 450w
+                                ./img\images\team\w\img4_540-d.webp 540w
+                                ./img\images\team\w\img4_708-t.webp 708w
+                                ./img\images\team\w\img4_900-m.webp 900w"
+                      sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                      src="./img/images/team/w/img4_450-m.webp 450w" 
+                      alt="designer" 
+                      class="team-list__images">
                     <div class="team-list__container">
                       <h3 class="title team-list__title">Михайло Єрмаков</h3>
                     <p lang="en" class="team-list__text">UI Designer</p>
@@ -397,7 +461,7 @@
       </div>
       </div>
     </footer>
-    <!--Main window-->
+    <!--Modal window-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
@@ -455,6 +519,48 @@
         </form>
       </div>
     </div>
+    <!--Mobile menu-->
+    <div class="menu-container js-menu-container">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="./img/svg/icons.svg#close-mobile-menu"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a href="./index.html" class="mobile-menu__link mobile-menu__link--studio">Студія</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--portfolio">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link mobile-menu__link--cont">Контакти</a>
+        </li>
+      </ul>
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a href="" class="mobile-contacts__link mobile-contacts__link--tel">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts__item">
+          <a href="" class="linkmobile-contacts__link linkmobile-contacts__link--mail">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-socials">
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link">Instagram</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link">Twitter</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link">Facebook</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <!--Modal-->
     <script src="./js/modal.js"></script>
     <!-- Mobile menu -->
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
