@@ -1,5 +1,14 @@
 .footer-social {
-    margin-right: auto;
+    @media screen and (max-width: 767px) {
+        width: 206px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: auto;
+    }
 }
 
 .footer-social__text {

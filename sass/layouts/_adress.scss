@@ -3,7 +3,11 @@
 }
 
 .adress__list .adress__item {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
 }
 
 .address_maps {

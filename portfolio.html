@@ -24,15 +24,20 @@
             </ul>
         </nav>
         <ul class="header__contacts">
-            <li class="header__item"><a href="mailto:info@devstudio.com" class="header__link header__link--mail-tel">
+            <li class="header__item"><a href="mailto:info@devstudio.com" class="header__link header__link--mail">
                 <svg class="header__envelope" width="16px" height="12px">
                     <use href="./img/svg/icons.svg#mail"></use>
                 </svg>info@devstudio.com</a></li>
-            <li class="header__item"><a href="tel:+380961111111" class="header__link header__link--mail-tel">
+            <li class="header__item"><a href="tel:+380961111111" class="header__link header__link--tel">
                 <svg class="header__smartphone" width="10px" height="16px">
                     <use href="./img/svg/icons.svg#phone"></use>
                 </svg>+38 096 111 11 11</a></li>
         </ul>
+        <button class="menu-btn-portfolio js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="40" height="40">
+                <use href="./img/svg/icons.svg#mobile-menu-btn"></use>
+            </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -52,8 +57,16 @@
                         <div class="list-project__container-img">
                             <!--<img src="./img/images/tehnok.jpg" alt="img" width="370" height="294">-->
                             <img srcset="
-                                        ./img\images\portfolio\w\img1_354-t.webp 354w
-                                        ./img\images\portfolio\w\img1_370-d.webp 370w ">
+                                        ./img/images/portfolio/w/img1_354-t.webp 354w,
+                                        ./img/images/portfolio/w/img1_370-d.webp 370w,
+                                        ./img/images/portfolio/w/img11_450-m.webp 450w,
+                                        ./img/images/portfolio/w/img1_708-t.webp 708w,
+                                        /img/images/portfolio/w/img1_740-d.webp 740w,
+                                        ./img/images/portfolio/w/img11_900-m.webp 900w"
+                                sizes="(min-width:1200) 370px, (min-width:768) 354px, (min-width:480) 450px, 100vw"
+                                src="./img/images/portfolio/w/img11_450-m.webp 450w"
+                                alt="img"
+                                class="list-project__img">
                             <div class="overlay">
                                 <p class="overlay-text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -70,7 +83,18 @@
                 <li class="list-project__item">
                     <a href="" class="list-project__link">
                         <div class="list-project__container-img">
-                            <img src="./img/images/neworlean.jpg" alt="img" width="370" height="294">
+                            <!--<img src="./img/images/neworlean.jpg" alt="img" width="370" height="294">-->
+                            <img srcset="
+                                        ./img/images/portfolio/w/img2_354-t.webp 354w,
+                                        ./img/images/portfolio/w/img2_370-d.webp 370w,
+                                        ./img/images/portfolio/w/img1_450-m.webp 450w,
+                                        ./img/images/portfolio/w/img2_708-t.webp 708w,
+                                        ./img/images/portfolio/w/img2_740-d.webp 740w,
+                                        ./img/images/portfolio/w/img1_900-m.webp 900w"
+                                sizes="(min-width:1200) 370px, (min-width:768) 354px, (min-width:480) 450px, 100vw"
+                                src="./img/images/portfolio/w/img11_450-m.webp 450w" 
+                                alt="img" 
+                                class="list-project__img">
                             <div class="overlay">
                                 <p class="overlay-text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -87,7 +111,18 @@
                 <li class="list-project__item">
                     <a href="" class="list-project__link">
                         <div class="list-project__container-img">
-                            <img src="./img/images/seafood.jpg" alt="img" width="370" height="294">
+                            <!--<img src="./img/images/seafood.jpg" alt="img" width="370" height="294">-->
+                            <img srcset="
+                                        ./img/images/portfolio/w/img3_354-t.webp 354w,
+                                        ./img/images/portfolio/w/img3_370-d.webp 370w,
+                                        ./img/images/portfolio/w/img2_450-m.webp 450w,
+                                        ./img/images/portfolio/w/img3_708-t.webp 708w,
+                                        ./img/images/portfolio/w/img3_740-d.webp 740w,
+                                        ./img/images/portfolio/w/img2_900-m.webp 900w"
+                                sizes="(min-width:1200) 370px, (min-width:768) 354px, (min-width:480) 450px, 100vw"
+                                src="./img/images/portfolio/w/img2_450-m.webp 450w" 
+                                alt="img" 
+                                class="list-project__img">
                             <div class="overlay">
                                 <p class="overlay-text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -104,7 +139,18 @@
                 <li class="list-project__item">
                     <a href="" class="list-project__link">
                         <div class="list-project__container-img">
-                            <img src="./img/images/prime.jpg" alt="img" width="370" height="294">
+                            <!--<img src="./img/images/prime.jpg" alt="img" width="370" height="294">-->
+                            <img srcset="
+                                        ./img/images/portfolio/w/img4_354-t.webp 354w,
+                                        ./img/images/portfolio/w/img4_370-d.webp 370w,
+                                        ./img/images/portfolio/w/img3_450-m.webp 450w,
+                                        ./img/images/portfolio/w/img4_708-t.webp 708w,
+                                        ./img/images/portfolio/w/img4_740-d.webp 740w,
+                                        ./img/images/portfolio/w/img3_900-m.webp 900w"
+                                sizes="(min-width:1200) 370px, (min-width:768) 354px, (min-width:480) 450px, 100vw"
+                                src="./img/images/portfolio/w/img3_450-m.webp 450w" 
+                                alt="img" 
+                                class="list-project__img">
                             <div class="overlay">
                                 <p class="overlay-text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -121,7 +167,18 @@
                 <li class="list-project__item">
                     <a href="" class="list-project__link">
                         <div class="list-project__container-img">
-                            <img src="./img/images/boxes.jpg" alt="img" width="370" height="294">
+                            <!--<img src="./img/images/boxes.jpg" alt="img" width="370" height="294">-->
+                            <img srcset="
+                                        ./img/images/portfolio/w/img5_354-t.webp 354w,
+                                        ./img/images/portfolio/w/img5_370-d.webp 370w,
+                                        ./img/images/portfolio/w/img4_450-m.webp 450w,
+                                        ./img/images/portfolio/w/img5_708-t.webp 708w,
+                                        ./img/images/portfolio/w/img5_740-d.webp 740w,
+                                        ./img/images/portfolio/w/img4_900-m.webp 900w"
+                                sizes="(min-width:1200) 370px, (min-width:768) 354px, (min-width:480) 450px, 100vw"
+                                src="./img/images/portfolio/w/img4_450-m.webp 450w" 
+                                alt="img" 
+                                class="list-project__img">
                             <div class="overlay">
                                 <p class="overlay-text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -138,7 +195,18 @@
                 <li class="list-project__item">
                     <a href="" class="list-project__link">
                         <div class="list-project__container-img">
-                            <img src="./img/images/inspiration.jpg" alt="img" width="370" height="294">
+                            <!--<img src="./img/images/inspiration.jpg" alt="img" width="370" height="294">-->
+                            <img srcset="
+                                        ./img/images/portfolio/w/img6_354-t.webp 354w,
+                                        ./img/images/portfolio/w/img6_370-d.webp 370w,
+                                        ./img/images/portfolio/w/img5_450-m.webp 450w,
+                                        ./img/images/portfolio/w/img6_708-t.webp 708w,
+                                        ./img/images/portfolio/w/img6_740-d.webp 740w,
+                                        ./img/images/portfolio/w/img5_900-m.webp 900w"
+                                sizes="(min-width:1200) 370px, (min-width:768) 354px, (min-width:480) 450px, 100vw"
+                                src="./img/images/portfolio/w/img5_450-m.webp 450w" 
+                                alt="img" 
+                                class="list-project__img">
                             <div class="overlay">
                                 <p class="overlay-text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -155,7 +223,18 @@
                 <li class="list-project__item">
                     <a href="" class="list-project__link">
                         <div class="list-project__container-img">
-                            <img src="./img/images/limited.jpg" alt="img" width="370" height="294">
+                            <!--<img src="./img/images/limited.jpg" alt="img" width="370" height="294">-->
+                            <img srcset="
+                                        ./img/images/portfolio/w/img7_354-t.webp 354w,
+                                        ./img/images/portfolio/w/img7_370-d.webp 370w,
+                                        ./img/images/portfolio/w/img6_450-m.webp 450w,
+                                        ./img/images/portfolio/w/img7_708-t.webp 708w,
+                                        ./img/images/portfolio/w/img7_740-d.webp 740w,
+                                        ./img/images/portfolio/w/img6_900-m.webp 900w"
+                                sizes="(min-width:1200) 370px, (min-width:768) 354px, (min-width:480) 450px, 100vw"
+                                src="./img/images/portfolio/w/img6_450-m.webp 450w" 
+                                alt="img" 
+                                class="list-project__img">
                             <div class="overlay">
                                 <p class="overlay-text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -172,7 +251,18 @@
                 <li class="list-project__item">
                     <a href="" class="list-project__link">
                         <div class="list-project__container-img">
-                            <img src="./img/images/lab.jpg" alt="img" width="370" height="294">
+                            <!--<img src="./img/images/lab.jpg" alt="img" width="370" height="294">-->
+                            <img srcset="
+                                        ./img/images/portfolio/w/img8_354-t.webp 354w,
+                                        ./img/images/portfolio/w/img8_370-d.webp 370w,
+                                        ./img/images/portfolio/w/img7_450-m.webp 450w,
+                                        ./img/images/portfolio/w/img8_708-t.webp 708w,
+                                        ./img/images/portfolio/w/img8_740-d.webp 740w,
+                                        ./img/images/portfolio/w/img7_900-m.webp 900w"
+                                sizes="(min-width:1200) 370px, (min-width:768) 354px, (min-width:480) 450px, 100vw"
+                                src="./img/images/portfolio/w/img7_450-m.webp 450w" 
+                                alt="img" 
+                                class="list-project__img">
                             <div class="overlay">
                                 <p class="overlay-text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -189,7 +279,18 @@
                 <li class="list-project__item">
                     <a href="" class="list-project__link">
                         <div class="list-project__container-img">
-                            <img src="./img/images/growing.jpg" alt="img" width="370" height="294">
+                            <!--<img src="./img/images/growing.jpg" alt="img" width="370" height="294">-->
+                            <img srcset="
+                                        ./img/images/portfolio/w/img9_450-m.webp 450w,
+                                        ./img/images/portfolio/w/img9_354-t.webp 354w,
+                                        ./img/images/portfolio/w/img9_370-d.webp 370w,
+                                        ./img/images/portfolio/w/img9_900-m.webp 900w,
+                                        ./img/images/portfolio/w/img9_708-t.webp 708w,
+                                        ./img/images/portfolio/w/img9_740-d.webp 740w"
+                                sizes="(min-width:1200) 370px, (min-width:768) 354px, (min-width:480) 450px, 100vw"
+                                src="./img/images/portfolio/w/img9_450-m.webp 450w" 
+                                alt="img" 
+                                class="list-project__img">
                             <div class="overlay">
                                 <p class="overlay-text">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати

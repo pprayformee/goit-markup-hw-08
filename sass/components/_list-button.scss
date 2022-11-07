@@ -1,13 +1,30 @@
 .list-button {
     display: flex;
-    margin-bottom: 34px;
-    width: 558px;
-    margin-left: auto;
+    margin-bottom: 40px;
     margin-right: auto;
+
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 40px;
+        width: 558px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+        margin-bottom: 34px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .list-button .list-button__item+.list-button__item {
-    margin-left: 9px;
+    margin-left: 8px;
 }
 
 .list-button__button .list-button__button--btn {

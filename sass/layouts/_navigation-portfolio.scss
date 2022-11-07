@@ -1,20 +1,47 @@
 .nav {
-    display: flex;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .nav__list {
-    display: flex;
-    margin-left: 92px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        margin-left: 87px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        margin-left: 92px;
+    }
 }
 
-.nav__list .nav__item+.nav__item {
-    margin-left: 50px;
+.nav__list .nav__item + .nav__item {
+    @media screen and (min-width: 768px) and ( max-width: 1199px) {
+        margin-left: 50px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 50px;
+    }
 }
 
 .nav__list .nav__link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
 }
 
 .nav__link {
@@ -46,13 +73,25 @@
 }
 
 .nav__link--portfolio-accent::after {
-    content: "";
-    display: block;
-    border-bottom: 4px solid rgba(33, 150, 243, 1);
-    width: 75px;
-    border-radius: 2px;
-    position: absolute;
-    top: 80px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        content: "";
+        display: block;
+        border-bottom: 4px solid rgba(33, 150, 243, 1);
+        width: 75px;
+        border-radius: 2px;
+        position: absolute;
+        top: 80px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        content: "";
+        display: block;
+        border-bottom: 4px solid rgba(33, 150, 243, 1);
+        width: 75px;
+        border-radius: 2px;
+        position: absolute;
+        top: 80px;
+    }
 }
 
 .nav__link--contacts {
