@@ -1,5 +1,5 @@
 .container-header {
-    width: 480px;
+    /*width: 480px;*/
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -42,7 +42,8 @@
 
 .header__contacts .header__link {
     @media screen and (min-width: 1200px) {
-        display: block;
+        display: flex;
+        align-items: center;
         padding-top: 32px;
         padding-bottom: 32px;
     }
