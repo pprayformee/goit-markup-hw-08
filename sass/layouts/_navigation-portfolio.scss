@@ -64,6 +64,7 @@
 .nav__link--portfolio-accent {
     color: var(--acent-color);
     text-decoration: none;
+    position: relative;
     transition: color var(--animation);
 
     &:hover,
@@ -77,20 +78,20 @@
         content: "";
         display: block;
         border-bottom: 4px solid rgba(33, 150, 243, 1);
-        width: 75px;
+        width: 100%;
         border-radius: 2px;
         position: absolute;
-        top: 80px;
+        top: 77px;
     }
 
     @media screen and (min-width: 1200px) {
         content: "";
         display: block;
         border-bottom: 4px solid rgba(33, 150, 243, 1);
-        width: 75px;
+        width: 100%;
         border-radius: 2px;
         position: absolute;
-        top: 80px;
+        top: 77px;
     }
 }
 

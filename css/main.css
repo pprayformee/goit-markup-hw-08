@@ -146,6 +146,7 @@ ul {
   font-size: var(--text-size);
   line-height: 1.14;
   text-decoration: none;
+  position: relative;
   -webkit-transition: color var(--animation);
   transition: color var(--animation);
 }
@@ -158,10 +159,10 @@ ul {
     content: "";
     display: block;
     border-bottom: 4px solid rgb(33, 150, 243);
-    width: 41px;
+    width: 100%;
     border-radius: 2px;
     position: absolute;
-    top: 80px;
+    top: 77px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -169,10 +170,10 @@ ul {
     content: "";
     display: block;
     border-bottom: 4px solid rgb(33, 150, 243);
-    width: 41px;
+    width: 100%;
     border-radius: 2px;
     position: absolute;
-    top: 80px;
+    top: 77px;
   }
 }
 
@@ -390,6 +391,7 @@ ul {
   font-weight: 900;
   font-size: 26px;
   line-height: 1.61;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
@@ -501,6 +503,11 @@ ul {
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 320px) and (max-width: 769px) {
+  .criteria-list__title {
+    text-align: center;
+  }
+}
 
 .criteria-list__text {
   color: #757575;
@@ -523,6 +530,7 @@ ul {
   font-weight: 700;
   font-size: var(--title-size);
   line-height: 1.16;
+  letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
 
@@ -569,7 +577,7 @@ ul {
   text-transform: uppercase;
   font-family: var(--main-font);
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
@@ -742,22 +750,23 @@ ul {
         flex-wrap: wrap;
   }
 }
+
 @media screen and (max-width: 767px) {
-  .clients-list.clients-list__item {
+  .clients-list__item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
     height: 92px;
   }
 }
 @media screen and (max-width: 768px) and (max-width: 1199px) {
-  .clients-list.clients-list__item {
+  .clients-list__item {
     -ms-flex-preferred-size: calc((100% - 60px) / 3);
         flex-basis: calc((100% - 60px) / 3);
     height: 92px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .clients-list.clients-list__item {
+  .clients-list__item {
     -ms-flex-preferred-size: calc((100% - 150px) / 6);
         flex-basis: calc((100% - 150px) / 6);
     height: 92px;
@@ -1002,16 +1011,18 @@ ul {
 @media screen and (max-width: 767px) {
   .footer-form__input {
     margin-bottom: 20px;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-form__input {
     margin-bottom: 20px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-form__input {
-    width: 368px;
+    width: 358px;
   }
 }
 
@@ -1059,6 +1070,12 @@ input[placeholder] {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--white-color);
   padding: 40px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1359,6 +1376,7 @@ input[placeholder] {
 .nav__link--portfolio-accent {
   color: var(--acent-color);
   text-decoration: none;
+  position: relative;
   -webkit-transition: color var(--animation);
   transition: color var(--animation);
 }
@@ -1371,10 +1389,10 @@ input[placeholder] {
     content: "";
     display: block;
     border-bottom: 4px solid rgb(33, 150, 243);
-    width: 75px;
+    width: 100%;
     border-radius: 2px;
     position: absolute;
-    top: 80px;
+    top: 77px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1382,10 +1400,10 @@ input[placeholder] {
     content: "";
     display: block;
     border-bottom: 4px solid rgb(33, 150, 243);
-    width: 75px;
+    width: 100%;
     border-radius: 2px;
     position: absolute;
-    top: 80px;
+    top: 77px;
   }
 }
 
@@ -1603,6 +1621,7 @@ input[placeholder] {
   font-weight: 700;
   font-size: 16px;
   font-family: inherit;
+  letter-spacing: 0.06em;
   line-height: 1.87;
   cursor: pointer;
   padding: 10px 32px;
